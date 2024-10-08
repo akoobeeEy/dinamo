@@ -1,11 +1,13 @@
 import Navbar from "../navbar/Navbar";
+import CatalogMenu from "./CatalogMenu";
 import HeaderTop from "./HeaderTop";
 
 const Header = () => {
   return (
     <header>
       <HeaderTop />
-      <Navbar/>
+      <Navbar />
+      <CatalogMenu />
     </header>
   );
 };

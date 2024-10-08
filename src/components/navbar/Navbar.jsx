@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaSearch, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { logo } from "@/assets/images";
 import { CartIcon, HeartIcon, SearchIcon, SearchSmIcon } from "@/assets/icons";
 import { useRef, useState, useEffect } from "react";
@@ -17,7 +17,6 @@ const Navbar = () => {
 
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Cleanup the event listener on component unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -25,8 +24,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white relative">
-      <div className="container">
-        <div className="grid grid-cols-3 text-titleColor border-b py-5">
+      <div className="container border-b">
+        <div className="grid grid-cols-3 text-titleColor  py-5">
           {/* contact */}
           <div className="flex flex-col gap-2">
             <Link to={"tel:+74957887750"} className="font-bold text-[18px]">
@@ -62,7 +61,7 @@ const Navbar = () => {
                 >
                   <input
                     type="text"
-                    className="border-b border-black focus:outline-none px-4"
+                    className="border-b border-black focus:outline-none px-4 text-sm"
                     placeholder="Я ищу"
                   />
                   <span className="absolute left-0 top-[5px]">
