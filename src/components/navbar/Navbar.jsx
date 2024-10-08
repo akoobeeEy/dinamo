@@ -3,10 +3,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { logo } from "@/assets/images";
 import { CartIcon, HeartIcon, SearchIcon, SearchSmIcon } from "@/assets/icons";
 import { useRef, useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const ref = useRef(null);
+  const cart = useSelector((state) => state.cart.products);
+  const favourites = useSelector((state) => state.favourit.favourites);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -41,7 +44,9 @@ const Navbar = () => {
           {/* logo */}
           <div className="flex justify-center">
             <div className="w-[284px] h-[100px] -mt-8">
-              <img src={logo} alt="" />
+              <Link to={"/"}>
+                <img src={logo} alt="" />
+              </Link>
             </div>
           </div>
           {/* right menu */}
@@ -70,11 +75,21 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link>
+            <Link className="relative" to={"/favourites"}>
               <HeartIcon />
+              {favourites?.length > 0 && (
+                <div className="absolute -top-3 -right-2 bg-[#FEAAE1] w-[22px] h-[22px] flex items-center justify-center rounded-full">
+                  <p className="font-bold text-xs">{favourites?.length}</p>
+                </div>
+              )}
             </Link>
-            <Link>
+            <Link className="relative" to={"/cart"}>
               <CartIcon />
+              {cart?.length > 0 && (
+                <div className="absolute -top-2 -right-2 bg-[#FEAAE1] w-[22px] h-[22px] flex items-center justify-center rounded-full">
+                  <p className="font-bold text-xs">{cart?.length}</p>
+                </div>
+              )}
             </Link>
           </div>
         </div>

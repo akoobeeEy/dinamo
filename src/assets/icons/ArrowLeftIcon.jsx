@@ -10,7 +10,7 @@ export const ArrowLeftIcon = (props) => {
     >
       <path
         d="M3 12L21 12M7 16L3 12L7 16ZM3 12L7 8L3 12Z"
-        stroke="#221A25"
+        stroke="currentColor"
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

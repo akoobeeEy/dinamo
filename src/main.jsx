@@ -4,13 +4,24 @@ import App from "./App.jsx";
 import "../public/tailwind.css";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@material-tailwind/react";
+import { Provider } from "react-redux";
+import { persistor, store } from "./redux/store/index.jsx";
+import { PersistGate } from "redux-persist/integration/react";
+import { ToastContainer } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <ThemeProvider>
+            <App />
+            <ToastContainer theme="colored" position="top-right" />
+          </ThemeProvider>
+        </PersistGate>
+      </Provider>
     </BrowserRouter>
   </StrictMode>
 );

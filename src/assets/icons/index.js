@@ -6,3 +6,4 @@ export * from "./SearchSmIcon";
 export * from "./ChevronDownIcon";
 export * from "./ArrowLeftIcon";
 export * from "./ArrowRightIcon";
+export * from "./EyesIcon";

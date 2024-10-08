@@ -19,7 +19,7 @@ const Banner = () => {
               onClick={handlePrev}
               className="!absolute top-2/4 left-4 -translate-y-2/4 "
             >
-              <ArrowLeftIcon />
+              <ArrowLeftIcon className="text-titleColor" />
             </IconButton>
           )}
           nextArrow={({ handleNext }) => (
@@ -30,7 +30,7 @@ const Banner = () => {
               onClick={handleNext}
               className="!absolute top-2/4 !right-4 -translate-y-2/4"
             >
-              <ArrowRightIcon className="text-titleColor"/>
+              <ArrowRightIcon className="text-titleColor" />
             </IconButton>
           )}
         >
@@ -63,7 +63,7 @@ const Banner = () => {
                       смотреть
                     </Button>
                     <Button className="rounded-[1px] text-white bg-pureGreen">
-                        <FaChevronRight className="text-white" />
+                      <FaChevronRight className="text-white" />
                     </Button>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const Banner = () => {
                       смотреть
                     </Button>
                     <Button className="rounded-[1px] text-white bg-pureGreen">
-                        <FaChevronRight className="text-white" />
+                      <FaChevronRight className="text-white" />
                     </Button>
                   </div>
                 </div>

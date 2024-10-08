@@ -27,8 +27,10 @@ module.exports = withMT({
         pureGreen: "#0CA145",
         limeGreen: "#2CDF70",
       },
+      backgroundImage: {
+        cardHover: "linear-gradient(360deg, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0) 100%)",
+      },
     },
   },
-
   plugins: [],
 });

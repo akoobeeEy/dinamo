@@ -4,8 +4,8 @@ import { CategoryData } from "@/data";
 
 const Category = () => {
   return (
-    <div className="py-6">
-      <div className="container">
+    <div className="py-6 ">
+      <div className="container ">
         <div className="grid grid-cols-6 gap-5">
           {CategoryData.map(({ name, image }) => (
             <div key={name} className="bg-trafficWhite py-[22px]">
