@@ -21,6 +21,7 @@ export default {
         headerTop: "#F7F8F7",
         titleColor: "#221A25",
         green: "#55C380",
+        textColor: "#99969A",
       },
     },
   },
