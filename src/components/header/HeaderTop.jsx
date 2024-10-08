@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeaderTop = () => {
   return (
-    <div className="bg-trafficWhite py-[6px] text-titleColor">
+    <div className="bg-trafficWhite py-[6px] text-titleColor hidden lg:block">
       <div className="container">
         <div className="flex justify-between items-center">
           {/* header top left */}

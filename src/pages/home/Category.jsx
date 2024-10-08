@@ -6,7 +6,7 @@ const Category = () => {
   return (
     <div className="py-6 ">
       <div className="container ">
-        <div className="grid grid-cols-6 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
           {CategoryData.map(({ name, image }) => (
             <div key={name} className="bg-trafficWhite py-[22px]">
               <div className="flex justify-center mb-10 px-[30px]">

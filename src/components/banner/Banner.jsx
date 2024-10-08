@@ -37,8 +37,8 @@ const Banner = () => {
           <div className="bg-gradient-to-r from-[#B7DEBF] to-[#E6F2E8] pt-2">
             <div className="container">
               <div className="grid grid-cols-2 place-items-center">
-                <img src={banner1} alt="image 1" className="object-contain" />
-                <div className="">
+                <img src={banner1} alt="image 1" className="h-[340px] lg:h-auto lg:object-contain" />
+                <div className="hidden lg:block">
                   <div className="relative mb-5">
                     <h1 className="font-black text-[44px] text-titleColor">
                       Новая коллекция{" "}
@@ -74,8 +74,8 @@ const Banner = () => {
           <div className="bg-gradient-to-r from-[#B7DEBF] to-[#E6F2E8] h-full">
             <div className="container h-full">
               <div className="grid grid-cols-2 place-items-center">
-                <img src={banner2} alt="image 2" className=" h-[397px]" />
-                <div className="">
+                <img src={banner2} alt="image 2" className="h-[340px] lg:h-[397px]" />
+                <div className="hidden lg:block">
                   <div className="relative mb-5">
                     <h1 className="font-black text-[44px] text-titleColor">
                       Новая коллекция{" "}
@@ -87,7 +87,7 @@ const Banner = () => {
                       <img src={dragonImg} alt="dragon" />
                     </div>
                   </div>
-                  <div className="relative">
+                  <div className="">
                     <p className="text-[20px] text-titleColor uppercase leading-8">
                       Комбинезоны и куртки с реалистичными <br /> фотопринтами
                     </p>

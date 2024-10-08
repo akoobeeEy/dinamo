@@ -7,5 +7,15 @@ export * from "./ChevronDownIcon";
 export * from "./ArrowLeftIcon";
 export * from "./ArrowRightIcon";
 export * from "./EyesIcon";
-export * from "./CloseIcon"
-export * from "./ChevronRightIcon"
+export * from "./CloseIcon";
+export * from "./ChevronRightIcon";
+export * from "./VisaIcon";
+export * from "./MirIcon";
+export * from "./MasterIcon";
+export * from "./ApplePayIcon";
+export * from "./GooglePayIcon";
+export * from "./PhoneIcon";
+export * from "./MetroIcon";
+export * from "./MenuIcon";
+export * from "./PlusIcon";
+export * from "./MinusIcon";
