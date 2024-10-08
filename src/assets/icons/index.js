@@ -1,1 +1,1 @@
-export * from "./MapIcon";
+export * from "./UserIcon";
