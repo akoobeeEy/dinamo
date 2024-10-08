@@ -18,7 +18,14 @@ createRoot(document.getElementById("root")).render(
         <PersistGate persistor={persistor}>
           <ThemeProvider>
             <App />
-            <ToastContainer theme="colored" position="top-right" />
+            <ToastContainer
+              position="top-center"
+              autoClose={2000}
+              hideProgressBar={false}
+              closeOnClick={true}
+              pauseOnHover
+              draggable
+            />
           </ThemeProvider>
         </PersistGate>
       </Provider>

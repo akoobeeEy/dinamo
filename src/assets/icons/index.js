@@ -7,3 +7,5 @@ export * from "./ChevronDownIcon";
 export * from "./ArrowLeftIcon";
 export * from "./ArrowRightIcon";
 export * from "./EyesIcon";
+export * from "./CloseIcon"
+export * from "./ChevronRightIcon"

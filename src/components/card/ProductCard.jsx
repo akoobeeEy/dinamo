@@ -7,7 +7,7 @@ import { IoIosHeartEmpty, IoMdHeart } from "react-icons/io";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ image, title, price, id }) => {
+const ProductCard = ({ image, title, category, price, id }) => {
   const sizes = ["S", "M", "L", "XL", "2XL", "3XL"];
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -22,18 +22,12 @@ const ProductCard = ({ image, title, price, id }) => {
         id,
         title,
         image,
+        category,
         price,
         quantity: 1,
       })
     );
-    toast.success(`${title} has been added to your cart!`, {
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    toast.success(`Товар успешно добавлен в корзину`);
   };
 
   const handleToggleFavorite = () => {

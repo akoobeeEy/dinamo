@@ -53,14 +53,7 @@ const ProductDetails = () => {
         quantity: 1,
       })
     );
-    toast.success(`${title} has been added to your cart!`, {
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    toast.success(`Товар успешно добавлен в корзину`);
   };
   if (!product)
     return (
@@ -78,7 +71,6 @@ const ProductDetails = () => {
       <div className="container">
         <Button
           onClick={backHome}
-          variant="gradient"
           color="green"
           className="mb-8  flex items-center gap-2 text-white"
         >

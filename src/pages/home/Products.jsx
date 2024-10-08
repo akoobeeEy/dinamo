@@ -15,7 +15,6 @@ const Products = () => {
   useEffect(() => {
     getProducts();
   }, []);
-  console.log(products);
 
   return (
     <div className="py-5">

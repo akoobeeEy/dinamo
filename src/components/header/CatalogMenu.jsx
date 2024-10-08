@@ -7,8 +7,8 @@ const CatalogMenu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
   return (
-    <div className="py-3 relative">
-      <div className="container relative">
+    <div className="py-3 relative ">
+      <div className="container relative border-b">
         <div className="flex justify-center gap-[56px]">
           {catalogList.map((parent, index) => (
             <div

@@ -6,7 +6,7 @@ import { FaChevronRight } from "react-icons/fa6";
 const Banner = () => {
   return (
     <div>
-      <div className="">
+      <div className="-mt-[12px]">
         <Carousel
           autoplay={true}
           loop={true}
