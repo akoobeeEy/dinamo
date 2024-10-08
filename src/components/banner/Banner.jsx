@@ -30,7 +30,7 @@ const Banner = () => {
               onClick={handleNext}
               className="!absolute top-2/4 !right-4 -translate-y-2/4"
             >
-              <ArrowRightIcon />
+              <ArrowRightIcon className="text-titleColor"/>
             </IconButton>
           )}
         >

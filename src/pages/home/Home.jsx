@@ -1,11 +1,15 @@
-import Banner from "@/components/banner/Banner"
+import Banner from "@/components/banner/Banner";
+import HomeTop from "./HomeTop";
+import Category from "./Category";
 
 const Home = () => {
   return (
     <div>
-      <Banner/>
+      <Banner />
+      <HomeTop />
+      <Category />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

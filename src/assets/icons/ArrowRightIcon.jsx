@@ -10,7 +10,7 @@ export const ArrowRightIcon = (props) => {
     >
       <path
         d="M21 12H3M17 8L21 12L17 8ZM21 12L17 16L21 12Z"
-        stroke="#221A25"
+        stroke="currentColor"
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
