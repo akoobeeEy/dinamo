@@ -22,8 +22,10 @@ module.exports = withMT({
       colors: {
         headerTop: "#F7F8F7",
         titleColor: "#221A25",
-        green: "#55C380",
+        greenColor: "#55C380",
         textColor: "#99969A",
+        pureGreen: "#0CA145",
+        limeGreen: "#2CDF70",
       },
     },
   },

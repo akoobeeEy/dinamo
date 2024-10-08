@@ -9,7 +9,6 @@ const CatalogMenu = () => {
   return (
     <div className="py-3 relative">
       <div className="container relative">
-        {/* Main Navigation Links */}
         <div className="flex justify-center gap-[56px]">
           {catalogList.map((parent, index) => (
             <div
@@ -18,8 +17,11 @@ const CatalogMenu = () => {
               onMouseEnter={() => setActiveMenu(parent.name)}
               onMouseLeave={() => setActiveMenu(null)}
             >
-              {/* Parent Link */}
-              <Link className="flex items-center gap-1 cursor-pointer mb-3">
+              <Link
+                className={`flex items-center gap-1 cursor-pointer font-bold text-base pb-1 ${
+                  activeMenu === parent.name ? "text-titleColor" : "text-textColor"
+                }`}
+              >
                 {parent.name}
                 <ChevronDownIcon
                   className={`transition-transform duration-500 ease-in-out ${
@@ -28,7 +30,6 @@ const CatalogMenu = () => {
                 />
               </Link>
 
-              {/* Dropdown Menu */}
               {activeMenu === parent.name && (
                 <div
                   className="absolute left-0 top-full w-full bg-white border-t z-10 shadow-lg
@@ -36,7 +37,11 @@ const CatalogMenu = () => {
                              group-hover:opacity-100 group-hover:scale-100 h-[500px] overflow-y-auto"
                   onMouseEnter={() => setActiveMenu(parent.name)}
                   onMouseLeave={() => setActiveMenu(null)}
-                style={{scrollbarColor: "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1)", scrollbarWidth: "thin"}}>
+                  style={{
+                    scrollbarColor: "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1)",
+                    scrollbarWidth: "thin",
+                  }}
+                >
                   <div className="grid grid-cols-4 gap-4 p-4">
                     {parent.categories.map((category, categoryIndex) => (
                       <div key={categoryIndex}>
@@ -44,11 +49,7 @@ const CatalogMenu = () => {
                         <ul>
                           {category.subList.map((item, subIndex) => (
                             <li key={subIndex} className="py-1">
-                              <Link
-                                to={`/catalog/${parent.name.toLowerCase()}/${category.name.toLowerCase()}`}
-                              >
-                                {item}
-                              </Link>
+                              <Link>{item}</Link>
                             </li>
                           ))}
                         </ul>
