@@ -1,12 +1,5 @@
 import { ArrowLeftIcon, ArrowRightIcon } from "@/assets/icons";
-import {
-  banner1,
-  banner2,
-  bannersm1,
-  bannersm2,
-  dragonImg,
-  flower,
-} from "@/assets/images";
+import { banner1, bannersm1, dragonImg, flower } from "@/assets/images";
 import { Button, Carousel, IconButton } from "@material-tailwind/react";
 import { FaChevronRight } from "react-icons/fa6";
 

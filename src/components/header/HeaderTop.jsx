@@ -22,9 +22,9 @@ const HeaderTop = () => {
           {/* header top right */}
           <div className="flex items-center gap-[4px]">
             <UserIcon className="w-[14px] h-[20px]" />
-            <Link className="text-sm hover:text-green duration-200">Вход</Link>
+            <Link  to={"/login"} className="text-sm hover:text-pureGreen duration-200">Вход</Link>
             <div className="bg-gray-300 w-[2px] h-[16px]"></div>
-            <Link className="text-sm hover:text-green duration-200">Регистрация</Link>
+            <Link to={"/register"} className="text-sm hover:text-pureGreen duration-200">Регистрация</Link>
           </div>
         </div>
       </div>
