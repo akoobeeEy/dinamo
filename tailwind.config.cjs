@@ -17,6 +17,11 @@ module.exports = withMT({
         center: true,
         padding: {
           DEFAULT: "1rem",
+          xs: "0.5rem",
+          sm: "1rem",
+          md: "1.5rem",
+          lg: "2rem",
+          xl: "3rem",
         },
       },
       colors: {
@@ -28,7 +33,8 @@ module.exports = withMT({
         limeGreen: "#2CDF70",
       },
       backgroundImage: {
-        cardHover: "linear-gradient(360deg, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0) 100%)",
+        cardHover:
+          "linear-gradient(360deg, rgba(0, 0, 0, 0.4) 27%, rgba(0, 0, 0, 0) 100%)",
       },
     },
   },

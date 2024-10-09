@@ -8,6 +8,8 @@ import yandex from "./yandex.png";
 import google from "./google.png";
 import footer from "./g2984.png";
 import footerEnd from "./footerend.png";
+import bannersm1 from "./bannersm1.png";
+import bannersm2 from "./bannersm2.png";
 export {
   logo,
   banner1,
@@ -19,4 +21,6 @@ export {
   google,
   footer,
   footerEnd,
+  bannersm1,
+  bannersm2,
 };

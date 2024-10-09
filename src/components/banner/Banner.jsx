@@ -1,5 +1,12 @@
 import { ArrowLeftIcon, ArrowRightIcon } from "@/assets/icons";
-import { banner1, banner2, dragonImg, flower } from "@/assets/images";
+import {
+  banner1,
+  banner2,
+  bannersm1,
+  bannersm2,
+  dragonImg,
+  flower,
+} from "@/assets/images";
 import { Button, Carousel, IconButton } from "@material-tailwind/react";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -17,7 +24,7 @@ const Banner = () => {
               color="white"
               size="lg"
               onClick={handlePrev}
-              className="!absolute top-2/4 left-4 -translate-y-2/4 "
+              className="!absolute top-2/4 left-4 -translate-y-2/4 lg:block hidden"
             >
               <ArrowLeftIcon className="text-titleColor" />
             </IconButton>
@@ -28,7 +35,7 @@ const Banner = () => {
               color="white"
               size="lg"
               onClick={handleNext}
-              className="!absolute top-2/4 !right-4 -translate-y-2/4"
+              className="!absolute top-2/4 !right-4 -translate-y-2/4 lg:block hidden"
             >
               <ArrowRightIcon className="text-titleColor" />
             </IconButton>
@@ -37,7 +44,16 @@ const Banner = () => {
           <div className="bg-gradient-to-r from-[#B7DEBF] to-[#E6F2E8] pt-2">
             <div className="container">
               <div className="grid grid-cols-2 place-items-center">
-                <img src={banner1} alt="image 1" className="h-[340px] lg:h-auto lg:object-contain" />
+                <img
+                  src={banner1}
+                  alt="image 1"
+                  className="h-[340px] lg:h-auto lg:object-contain md:block hidden"
+                />
+                <img
+                  src={bannersm1}
+                  alt=""
+                  className="object-cover w-full h-full md:hidden block"
+                />
                 <div className="hidden lg:block">
                   <div className="relative mb-5">
                     <h1 className="font-black text-[44px] text-titleColor">
@@ -71,10 +87,19 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-[#B7DEBF] to-[#E6F2E8] h-full">
-            <div className="container h-full">
+          <div className="bg-gradient-to-r from-[#B7DEBF] to-[#E6F2E8] pt-2">
+            <div className="container">
               <div className="grid grid-cols-2 place-items-center">
-                <img src={banner2} alt="image 2" className="h-[340px] lg:h-[397px]" />
+                <img
+                  src={banner1}
+                  alt="image 1"
+                  className="h-[340px] lg:h-auto lg:object-contain md:block hidden"
+                />
+                <img
+                  src={bannersm1}
+                  alt=""
+                  className="object-cover w-full h-full md:hidden block"
+                />
                 <div className="hidden lg:block">
                   <div className="relative mb-5">
                     <h1 className="font-black text-[44px] text-titleColor">
@@ -87,7 +112,7 @@ const Banner = () => {
                       <img src={dragonImg} alt="dragon" />
                     </div>
                   </div>
-                  <div className="">
+                  <div className="relative">
                     <p className="text-[20px] text-titleColor uppercase leading-8">
                       Комбинезоны и куртки с реалистичными <br /> фотопринтами
                     </p>

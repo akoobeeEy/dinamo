@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer className="bg-trafficWhite pt-10">
       <div className="container pb-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4  ">
+        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4  ">
           {footerData.map((section, index) => (
             <div key={index} className="flex flex-col">
               <h3 className="font-bold mb-4 text-sm text-titleColor tracking-wider">
@@ -75,6 +75,7 @@ const Footer = () => {
               <p className="text-textColor font-normal text-sm mb-8">
                 Ежедневно c 10 до 20
               </p>
+
               <div className="flex gap-4 flex-wrap mb-8">
                 <Link>
                   <FaInstagram className="text-xl" />
@@ -89,7 +90,7 @@ const Footer = () => {
                   <FaTelegram className="text-xl" />
                 </Link>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex  lg:flex-col gap-4">
                 <img
                   src={yandex}
                   alt=""
@@ -109,15 +110,18 @@ const Footer = () => {
         <div className="container">
           <div className="flex justify-between flex-wrap">
             <div className="flex gap-[10px] flex-wrap lg:gap-[21px] mb-4 xl:mb-0">
-              <p className="w-[420px] font-normal text-sm text-titleColor">
-                ©2021 интернет-магазин детской функциональной одежды Диномама.ру
+              <p className="w-full md:w-[420px] font-normal text-xs md:text-sm text-titleColor">
+                ©2021 интернет-магазин детской
+                <span>функциональной одежды Диномама.ру</span>
               </p>
-              <p className="text-sm text-pureGreen">
+              <p className="text-xs md:text-sm text-pureGreen">
                 Защита персональных данных
               </p>
-              <p className="text-sm text-pureGreen">Публичная оферта</p>
+              <p className="text-xs md:text-sm text-pureGreen">
+                Публичная оферта
+              </p>
             </div>
-            <div className="flex gap-[30px]">
+            <div className="flex gap-[10px] flex-wrap md:gap-[30px]">
               <div className="">
                 <h5 className="font-normal text-sm text-titleColor mb-2">
                   Мы принимаем:
